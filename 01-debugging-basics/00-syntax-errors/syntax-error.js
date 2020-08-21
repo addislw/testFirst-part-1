@@ -1,12 +1,14 @@
 /* eslint-disable no-unused-vars */
-const hi =;
-const bye = 'bye;
-const world = 'world"
-function() {
-  return `${hello} ${world}`
+hi = 'hi';
+world = 'world';
+const bye = 'bye';
+
+function helloWorld() {
+  return `hi world`;
 }
+
 const goodbyeWorld = {
-  good: 'good';
-  bye,
-  world
-}
+  good: 'good',
+  bye: 'bye',
+  world: 'world',
+};
