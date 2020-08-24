@@ -47,4 +47,29 @@ function gridGenerator(n) {
   }
   return retStr;
 }
-console.log(gridGenerator(2));
+
+const paramify = (obj) => {
+  let arr = [];
+  for (prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      arr.push(`${prop}=${obj[prop]}`);
+    }
+  }
+  newStr = arr.sort().join('&');
+  return newStr;
+};
+
+function paramifyObjectKeys(obj) {
+  let arr = [];
+  for (prop in obj) {
+    if (Object.keys(obj)) {
+      arr.push(`${prop}=${obj[prop]}`);
+    }
+  }
+  newStr = arr.sort().join('&');
+  return newStr;
+}
+
+const sort = (numArr) => {
+  return numArr;
+};
